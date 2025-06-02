@@ -1,0 +1,44 @@
+.contenedor-servicios-general{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 10rem;
+}
+
+.contenedor-servicios{
+    background-color: lightblue;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    border-radius: 0.3rem;
+    align-self: flex-start;
+    margin: 8rem 1rem;
+}
+
+.contenedor-color-fondo{
+display: flex;
+justify-content: flex-end;
+width: 100%;
+background-color: rgb(230, 230, 230);
+padding: 0;
+margin: 0;
+}
+
+.contenedor-servicios.dos{
+    align-self: flex-end;
+}
+
+.contenedor-explora{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    height: 550px;
+    width: 100%;
+    margin: 0;
+    background-color: rgb(230, 230, 230)
+}
+
