@@ -8,12 +8,41 @@
 .contenedor-servicios{
     background-color: lightblue;
     width: 60%;
+    height: 350px;
     display: flex;
     justify-content: space-around;
     padding: 2rem;
     border-radius: 0.3rem;
     align-self: flex-start;
-    margin: 8rem 1rem;
+    margin: 8rem 2rem;
+}
+
+.servicio-izquierda{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 0.6rem;
+  width: 50%;
+}
+
+.servicio-derecha{
+  width: 50%;
+  align-self: center;
+}
+
+.servicio-izquierda button{
+  border: none;
+  padding: 0.8rem;
+  border-radius: 0.3rem;
+}
+
+.servicio-izquierda button:hover,
+.contenedor-explora a:hover,
+.bannerDerecha button:hover{
+  transform: scale(1.1);
+  transition: .3s ease;
 }
 
 .contenedor-color-fondo{
@@ -28,6 +57,9 @@ margin: 0;
 .contenedor-servicios.dos{
     align-self: flex-end;
 }
+.contenedor-servicios.tres{
+    background-color: #818eea;
+}
 
 .contenedor-explora{
     display: flex;
@@ -41,4 +73,164 @@ margin: 0;
     margin: 0;
     background-color: rgb(230, 230, 230)
 }
+form[id='sugerencias']{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    gap: 0.5rem;
+    padding: 1rem;
+    margin: 4rem 0 15rem 0;
+    border: 1px solid rgb(172, 142, 142);
+    border-radius: 0.3rem;
+}
 
+form button{
+  width: 50%;
+  margin: 1rem;
+  align-self: center;
+}
+.contenedor-biografia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding: 1rem;
+    gap: 1rem;
+    background-color: lightsalmon;
+
+}
+.biografia.primero{
+    display: flex;
+    background-color: lightblue;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.biografia-derecha{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+
+
+
+.biografias-secundarias{
+    display: flex;
+    
+    gap: 1rem;
+    background-color: lightgreen;
+}
+
+.biografia.segundo{
+    display: flex;
+    flex-direction: column;
+    
+    flex-grow: 2;
+    flex-basis: 63%;
+    
+    background-color: lightpink;
+}
+
+.biografia.tercero{
+    display: flex;
+    flex-direction: column;
+
+    background-color: lightgrey;
+}
+
+.biografia.cuarto{
+    display: flex;
+    flex-direction: column;
+    background-color: lightseagreen;
+}
+
+.contenedor-autores{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding: 2rem;
+  width: 90%;
+  height: auto;
+  background-color: lightblue;
+}
+
+.autores-izquierda{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 60%;
+  background-color: lightgreen;
+}
+
+
+
+.contenedor-autores-obras{
+  margin: 4rem;
+  text-align: center;
+}
+
+.autores-obras{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  text-align: center;
+  padding: 1rem;
+  gap: 2rem;
+  height: auto;
+  background-color: rgb(36, 112, 112);
+}
+
+.contenedor-imagen-autor{
+  width: 300px;
+  height: 400px;
+  background-color: lightcoral;
+}
+
+.contenedor-imagen-autor img{
+  width: 100%;
+  height: 100%;
+}
+
+.obra{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  width: 225px;
+  height: 425px;
+  text-align: center;
+
+}
+
+.obra div{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.obra img{
+  width: 225px;
+  height: 325px;
+  max-width: 225px;
+  max-height: 325px;
+}
+
+.sugerencias-titulos{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 80%;
+}

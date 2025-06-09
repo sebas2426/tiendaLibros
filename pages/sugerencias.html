@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/styles2.css">
+    <script src="../js/script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <div class="headerIzquierda">
+            <a href="../index.html"><img src="../images/logo.svg" style="width: 75px;" alt=""></a>
+        </div>
+
+        <div class="ham-menu-off">
+            <a href=""><li>Modo Nocturno</li></a>
+            <a href="./servicios.html"><li>Nuestros servicios</li></a>
+            <a href="./sugerencias.html"><li>Envianos tu sugerencias</li></a>
+            <a href=""><li>Sobre mí</li></a>
+        </div>
+
+        <nav class="nav-ham-menu">
+            <div class="ham-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="sugerencias-titulos">
+            <h2>Dejanos tu sugerencia</h2>
+            <p>¿Tienes alguna sugerencia, comentario o queja sobre nuestra tienda? ¡Nos encantaría saber tu opinión! Completa el siguiente formulario y cuéntanos cómo podemos mejorar, qué servicios te gustaría que ofrezcamos o cualquier experiencia que quieras compartir. Tu voz es muy importante para nosotros y nos ayuda a seguir creciendo y ofreciendo el mejor servicio posible. ¡Gracias por ayudarnos a ser cada día mejores!</p>
+        </div>
+            <form action="" method="post" id="sugerencias">
+                
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre">
+    
+                <label for="motivo">Motivo</label>
+                <select name="motivo" id="motivo">
+                    <option value="" disabled selected>--Selecciona una opción--</option>
+                    <option value="sugerencia">Sugerencia</option>
+                    <option value="queja">Queja</option>
+                    <option value="otros">Otros</option>
+                </select>
+                <label for="contenido">Compartenos tu mensaje</label>
+                <textarea name="contenido" id="contenido" style="height: 8rem;"></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+            <i class="bi bi-arrow-up-circle ir-inicio hidden"  style="font-size: 2.5rem;"></i>
+            
+    </main>
+
+    <footer>
+        <div class="contenedor-footer">
+
+        <div class="footer-izquierda">
+            <img src="../images/logo.svg" width="150px" height="auto" alt="">
+            <h2>Librería</h2>
+            <p>Lunes a Sábados 08:00-17:00h</p>
+        </div>
+        <div class="footer-linea"></div>
+
+        <div class="footer-centro">
+            <h2>Contáctanos</h2>
+                <nav>
+                    <ul>
+                        <li class="numero">+595-972-187-642</li>
+                        <li>tobiaspalma505@gmail.com</li>
+                    </ul>
+                </nav>
+                
+                <div class="footer-centro-redes">
+                    <a href=""><i class="bi bi-instagram" style="font-size: 1.5rem;"></i></a>
+                    <a href=""><i class="bi bi-tiktok" style="font-size: 1.5rem;"></i></a>
+                    <a href=""><i class="bi bi-facebook" style="font-size: 1.5rem;"></i></a>
+                    <a href=""><i class="bi bi-youtube" style="font-size: 1.5rem;"></i></a>
+                </div>
+        </div>
+        <div class="footer-linea"></div>
+
+            <div class="footer-derecha">
+                <div class="footer-derecha-navs">
+                    <h4>Categorías</h4>
+                    <nav>
+                        <ul>
+                            <a href=""><li>Aventuras</li></a>
+                            <a href=""><li>Juveniles</li></a>
+                            <a href=""><li>Infantiles</li></a>
+                            <a href=""><li>Terror</li></a>
+                        </ul>
+                        
+                    </nav>
+                </div>
+
+                <div class="footer-derecha-navs">
+                    <h4>Enlaces</h4>
+                    <nav>
+                        <ul>
+                            <a href=""><li>Incio</li></a>
+                            <a href=""><li>Categorías</li></a>
+                            <a href=""><li>Recomendaciones</li></a>
+                            <a href=""><li>Sobre mí</li></a>
+                            
+                        </ul>
+                        
+                    </nav>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    
+</body>
+</html>
