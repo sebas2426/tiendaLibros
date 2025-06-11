@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/styles2.css">
+    <link rel="stylesheet" href="../css/sugerencias.css">
     <script src="../js/script.js" defer></script>
     <title>Document</title>
 </head>
@@ -36,23 +37,29 @@
             <h2>Dejanos tu sugerencia</h2>
             <p>¿Tienes alguna sugerencia, comentario o queja sobre nuestra tienda? ¡Nos encantaría saber tu opinión! Completa el siguiente formulario y cuéntanos cómo podemos mejorar, qué servicios te gustaría que ofrezcamos o cualquier experiencia que quieras compartir. Tu voz es muy importante para nosotros y nos ayuda a seguir creciendo y ofreciendo el mejor servicio posible. ¡Gracias por ayudarnos a ser cada día mejores!</p>
         </div>
-            <form action="" method="post" id="sugerencias">
-                
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre">
-    
-                <label for="motivo">Motivo</label>
-                <select name="motivo" id="motivo">
-                    <option value="" disabled selected>--Selecciona una opción--</option>
-                    <option value="sugerencia">Sugerencia</option>
-                    <option value="queja">Queja</option>
-                    <option value="otros">Otros</option>
-                </select>
-                <label for="contenido">Compartenos tu mensaje</label>
-                <textarea name="contenido" id="contenido" style="height: 8rem;"></textarea>
 
-                <button type="submit">Enviar</button>
-            </form>
+        <form id="form">
+  <div class="field">
+    <label for="title">Titulo</label>
+    <input type="text" name="title" id="title">
+  </div>
+  <div class="field">
+    <label for="name">Nombre</label>
+    <input type="text" name="name" id="name">
+  </div>
+
+  <div class="field">
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email">
+  </div>
+
+  <div class="field">
+    <label for="message">Mensaje</label>
+    <textarea name="message" id="message"></textarea>
+  </div>
+
+  <input type="submit" id="button" value="Send Email" >
+</form>
             <i class="bi bi-arrow-up-circle ir-inicio hidden"  style="font-size: 2.5rem;"></i>
             
     </main>
@@ -118,4 +125,32 @@
     </footer>
     
 </body>
+
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('gQOaw6WbHV0Cjfrnx');
+
+  const btn = document.getElementById('button');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Sending...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_ni8tqtz';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+      alert('Sent!');
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});
+</script>
 </html>

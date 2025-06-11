@@ -234,3 +234,20 @@ form button{
   text-align: center;
   width: 80%;
 }
+
+.catalogo-destacados{
+  align-self: center;
+  background-color: lightblue;
+  width: 100%;
+}
+
+.catalogo-destacados .masVendidos{
+  margin: 0 auto;
+  background-color: lightcoral;
+  width: 100%;
+}
+
+.catalogo-destacados .masVendidos .libros{
+  background-color: rgb(138, 240, 240);
+}
+
