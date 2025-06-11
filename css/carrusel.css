@@ -2,7 +2,6 @@
 
 .container {
 	padding: 2rem;
-    background-color: lightcoral;
     width: 90%;
 }
 
@@ -14,7 +13,7 @@
 
 .slider {
 	display: flex;
-	aspect-ratio: 16/9;
+	aspect-ratio: 18/9;
 	overflow-x: auto;
 	scroll-snap-type: x mandatory;
 	scroll-behavior: smooth;
@@ -22,6 +21,7 @@
 	border-radius: 0.5rem;
 	-ms-overflow-style: none; /* Hide scrollbar IE and Edge */
 	scrollbar-width: none; /* Hide scrollbar Firefox */
+    border: 1px solid #A8DCD1;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */

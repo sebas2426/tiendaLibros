@@ -33,7 +33,7 @@
   /* 7. Avoid text overflows */
   p, h1, h2, h3, h4, h5, h6, a {
     overflow-wrap: break-word;
-    color: #0f1620;
+    color: #333333;
   }
   
   /* 8. Improve line wrapping */
@@ -83,7 +83,7 @@ header{
 }
 
 .ham-menu-off{
-  background-color: #5d6f88;
+  background-color: #FFF8F0;
   height: 100vh;
   width: 100%;
   max-width: 30%;
@@ -148,11 +148,12 @@ header{
 .contenedorIntroduccion,
 .contenedorRecomendados{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 1rem;
     gap: 1rem;
     text-align: center;
+    width: 90%;
 }
 
 
@@ -161,7 +162,7 @@ main{
     flex-direction: column;
     align-items: center;
     padding-top: 1rem;
-    background-color: rgb(243, 250 , 255);
+    background-color: #F0F4F3;
 }
 
 .titulos-catalogos{
@@ -179,8 +180,10 @@ main{
   width: 90%;
   height: auto;
   gap: 2rem;
-  background-color: rgb(241, 242, 255);
+  background-color: #ececec;
   border-radius: 0.5rem;
+  margin: 2rem 0;
+  padding: 1rem 0;
 }
 .contenedorLista{
 position: relative;
@@ -190,6 +193,7 @@ overflow: auto;
   
   padding: 1rem 4rem;
   width: 100%;
+  margin-bottom: 2rem;
 }
 
 .masVendidos{
@@ -216,6 +220,12 @@ width: 70%;
   overflow-x: hidden;
 }
 
+.libros:hover{
+  transform: scale(1.02);
+  transition: .3s ease;
+  cursor: pointer;
+}
+
 
 .libros img{
   width: 100%;
@@ -228,9 +238,11 @@ width: 70%;
   justify-content: center;
   padding: 1.5rem;
   gap: 1rem;
-  border: 2px solid black;
-  border-radius: 0.2rem;
+  border: 2px solid #A8DCD1;
+  border-radius: 0.3rem;
   width: 80%;
+  background-color: #FFFFFF;
+  margin-bottom: 2rem;
 }
 .bannerDerecha{
   display: flex;
@@ -244,9 +256,9 @@ width: 70%;
   width: 6rem;
   height: auto;
   padding: 1rem;
-  border: 1px solid black;
+  border: none;
   border-radius: 0.5rem;
-  background-color: rgb(255, 255, 255);
+  background-color: #00897B;
   margin: 0 auto;
 }
 
@@ -257,7 +269,6 @@ width: 70%;
   gap: 3rem;
   text-align: center;
   width: 80%;
-  background-color: rgb(153, 173, 153);
   padding: 1rem;
   margin: 1rem;
 }
@@ -267,6 +278,11 @@ width: 70%;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.contenedorAutores span:hover{
+  transform: scale(1.02);
+  transition: .3s ease;
 }
 
 .contenedorAutores span img{
@@ -307,7 +323,26 @@ footer{
   justify-content: space-around;
   width: 100%;
   padding: 1rem;
-  background-color: rgb(206, 208, 221);
+  background-color: #00695C;
+}
+
+.contenedor-footer h2, .contenedor-footer li, .contenedor-footer h4,
+.footer-izquierda h2, .contenedor-footer p{
+   color: 	#FFFFFF;
+}
+
+.contenedor-footer i{
+  color: #D0BAFF;
+}
+
+.contenedor-footer img{
+  background-color: #F0F4F3;
+  opacity: 0.9;
+}
+
+.contenedor-footer li,
+.footer-izquierda p{
+   color: 	#D0E7E4;
 }
 
 .footer-izquierda{
@@ -326,12 +361,12 @@ footer{
 .footer-centro-redes{
   display: flex;
   justify-content: flex-start;
-  gap: 2rem;
+  gap: 2.8rem;
   margin-top: 3.5rem;
 }
 
 footer .footer-linea{
-  border-left: 2px solid black;
+  border-left: 2px solid #D0BAFF;
   height: 100%;
 }
 
@@ -361,7 +396,7 @@ nav ul{
 }
 .recomendadosDerecha button{
   padding: 0.5rem 1rem;
-  background-color: rgb(131, 125, 118);
+  background-color: #00897B;
   border: none;
   border-radius: 0.3rem;
 }
@@ -370,4 +405,11 @@ nav ul{
 .recomendadosDerecha button:hover{
   transform: scale(1.1);
   transition: .3s ease;
+  background-color: #005048;
+}
+
+.pre-btn,
+.nxt-btn{
+  border: none;
+  background-color: #F0F4F3;
 }

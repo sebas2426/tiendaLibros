@@ -6,12 +6,13 @@
 }
 
 .contenedor-servicios{
-    background-color: lightblue;
+    background-color: #FFFFFF;
     width: 60%;
     height: 350px;
     display: flex;
     justify-content: space-around;
     padding: 2rem;
+    border: 2px solid #A8DCD1;
     border-radius: 0.3rem;
     align-self: flex-start;
     margin: 8rem 2rem;
@@ -36,6 +37,7 @@
   border: none;
   padding: 0.8rem;
   border-radius: 0.3rem;
+  background-color: #A8DCD1;
 }
 
 .servicio-izquierda button:hover,
@@ -43,6 +45,7 @@
 .bannerDerecha button:hover{
   transform: scale(1.1);
   transition: .3s ease;
+  background-color: 	#00998a;
 }
 
 .contenedor-color-fondo{
@@ -57,9 +60,7 @@ margin: 0;
 .contenedor-servicios.dos{
     align-self: flex-end;
 }
-.contenedor-servicios.tres{
-    background-color: #818eea;
-}
+
 
 .contenedor-explora{
     display: flex;
@@ -98,22 +99,23 @@ form button{
     width: 90%;
     padding: 1rem;
     gap: 1rem;
-    background-color: lightsalmon;
 
 }
 .biografia.primero{
     display: flex;
-    background-color: lightblue;
+    background-color: #FFFFFF;
+    border: 1px solid #A8DCD1;
+    border-radius: 0.3rem;
     justify-content: center;
     text-align: center;
     gap: 1rem;
-    padding: 1rem;
+    padding: 1.5rem;
 }
 
 .biografia-derecha{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
    
 }
@@ -122,33 +124,44 @@ form button{
 
 .biografias-secundarias{
     display: flex;
-    
-    gap: 1rem;
-    background-color: lightgreen;
+    width: 80%;
+    gap: 1.5rem;
 }
 
+.biografia.primero img{
+  width: 400px;
+  border-radius: 10%;
+  height: auto;
+}
 .biografia.segundo{
     display: flex;
     flex-direction: column;
-    
     flex-grow: 2;
     flex-basis: 63%;
     
     background-color: lightpink;
 }
 
-.biografia.tercero{
-    display: flex;
-    flex-direction: column;
-
-    background-color: lightgrey;
-}
-
+.biografia.tercero,
 .biografia.cuarto{
     display: flex;
     flex-direction: column;
-    background-color: lightseagreen;
+    gap: 0.5rem;
+    background-color: #FFFFFF;
+    border: 1px solid #A8DCD1;
+    height: 300px;
 }
+.biografia h2{
+  text-align: center;
+}
+
+.biografia.tercero ul li,
+.biografia.cuarto ul li{
+  margin: 0.8rem;
+  list-style: inside;
+}
+
+
 
 .contenedor-autores{
   display: flex;
@@ -157,7 +170,9 @@ form button{
   padding: 2rem;
   width: 90%;
   height: auto;
-  background-color: lightblue;
+  background-color:#FFFFFF;
+  border: 1px solid #A8DCD1;
+  border-radius: 0.5rem;
 }
 
 .autores-izquierda{
@@ -165,10 +180,16 @@ form button{
   flex-direction: column;
   justify-content: space-between;
   width: 60%;
-  background-color: lightgreen;
+  font-size: 1em
 }
 
-
+.frase-celebre{
+  font-style: italic;
+  color: #3f3f3f;
+  border-left: 2px solid #ccc;
+  padding-left: 1em;
+  margin: 1.5em 0;
+}
 
 .contenedor-autores-obras{
   margin: 4rem;
@@ -183,13 +204,14 @@ form button{
   padding: 1rem;
   gap: 2rem;
   height: auto;
-  background-color: rgb(36, 112, 112);
+  margin: 1rem;
 }
 
 .contenedor-imagen-autor{
   width: 300px;
   height: 400px;
   background-color: lightcoral;
+   border-radius: 0.5rem;
 }
 
 .contenedor-imagen-autor img{
@@ -206,7 +228,12 @@ form button{
   width: 225px;
   height: 425px;
   text-align: center;
+}
 
+.obra:hover{
+  transform: scale(1.1);
+  transition: .3s ease;
+  cursor: pointer;
 }
 
 .obra div{
