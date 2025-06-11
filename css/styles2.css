@@ -264,17 +264,16 @@ form button{
 
 .catalogo-destacados{
   align-self: center;
-  background-color: lightblue;
-  width: 100%;
+  background-color:rgb(230, 230, 230);
+  width: 90%;
+}
+.catalogo-destacados button{
+  background-color:rgb(230, 230, 230);
 }
 
 .catalogo-destacados .masVendidos{
   margin: 0 auto;
-  background-color: lightcoral;
   width: 100%;
 }
 
-.catalogo-destacados .masVendidos .libros{
-  background-color: rgb(138, 240, 240);
-}
 
