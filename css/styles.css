@@ -33,7 +33,7 @@
   /* 7. Avoid text overflows */
   p, h1, h2, h3, h4, h5, h6, a {
     overflow-wrap: break-word;
-    color: #333333;
+    color: var(--letras);
   }
   
   /* 8. Improve line wrapping */
@@ -61,6 +61,7 @@
 
   button{
     cursor: pointer;
+    color:var(--letras);
   }
   a[type='button']{
     border: 1px solid rgb(124, 124, 124);
@@ -74,16 +75,45 @@
   
   border: none;
 }
+
+:root{
+  --fondo:#F0F4F3;
+  --header:white;
+  --ham-menu: #FFF8F0;
+  --ham-menu-btn:rgb(71, 69, 69);
+  --contenedorRecomendados:#ececec;
+  --banner:#FFFFFF;
+  --borde:#A8DCD1;
+  --footer:#00695C;
+  --letras:#333333;
+  --iconos:black;
+}
+
+.modo-oscuro{
+  --fondo:rgb(26, 25, 25);
+  --header:black;
+  --ham-menu:rgb(68, 67, 67);
+  --ham-menu-btn:rgb(197, 187, 187);
+  --contenedorRecomendados:#333333;
+  --banner:#000000;
+  --borde:#A8DCD1;
+  --footer:#00695C;
+  --letras:white;
+  --iconos:white;
+}
+
+
+
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding:1rem;
-    background-color: white;
+    background-color: var(--header);
 }
 
 .ham-menu-off{
-  background-color: #FFF8F0;
+  background-color:var(--ham-menu);
   height: 100vh;
   width: 100%;
   max-width: 30%;
@@ -118,7 +148,7 @@ header{
   left: 50%;
   height: 5px;
   width: 100%;
-  background-color: rgb(71, 69, 69);
+  background-color: var(--ham-menu-btn);
   transform: translate(-50%, -50%);
   border-radius: 1rem;
   transition: .3s ease;
@@ -147,6 +177,8 @@ header{
   top: 50%;
   transform: translate(-50%, 50%) rotate(-45deg);
 }
+
+
 .contenedorIntroduccion,
 .contenedorRecomendados{
     display: flex;
@@ -164,8 +196,10 @@ main{
     flex-direction: column;
     align-items: center;
     padding-top: 1rem;
-    background-color: #F0F4F3;
+    background-color: var(--fondo);
 }
+
+
 
 .titulos-catalogos{
   align-self: self-start;
@@ -182,7 +216,7 @@ main{
   width: 90%;
   height: auto;
   gap: 2rem;
-  background-color: #ececec;
+  background-color:var(--contenedorRecomendados) ;
   border-radius: 0.5rem;
   margin: 2rem 0;
   padding: 1rem 0;
@@ -192,7 +226,6 @@ position: relative;
 overflow: auto;
   display: flex;
   align-items: center;
-  
   padding: 1rem 4rem;
   width: 100%;
   margin-bottom: 2rem;
@@ -203,6 +236,7 @@ overflow-x:hidden;
 scroll-behavior: smooth;
 width: 70%;
   display: flex;
+  justify-content: flex-start;
   align-items: center;
   gap: 4rem;
   padding: 1rem 1rem;
@@ -213,10 +247,13 @@ width: 70%;
 }
 
 .libros{
-  width: 170px;
+  width: 180px;
+  height: 380px;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   gap: 0.5rem;
   overflow: hidden;
   overflow-x: hidden;
@@ -228,10 +265,19 @@ width: 70%;
   cursor: pointer;
 }
 
+.info-libros{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
 
 .libros img{
-  width: 100%;
-  height: 250px;
+  width: 200px;
+  height: 850px;
   overflow: hidden;
 }
 
@@ -240,10 +286,10 @@ width: 70%;
   justify-content: center;
   padding: 1.5rem;
   gap: 1rem;
-  border: 2px solid #A8DCD1;
+  border: 2px solid var(--borde);
   border-radius: 0.3rem;
   width: 80%;
-  background-color: #FFFFFF;
+  background-color: var(--banner);
   margin-bottom: 2rem;
 }
 .bannerDerecha{
@@ -325,7 +371,7 @@ footer{
   justify-content: space-around;
   width: 100%;
   padding: 1rem;
-  background-color: #00695C;
+  background-color: var(--footer);
 }
 
 .contenedor-footer h2, .contenedor-footer li, .contenedor-footer h4,
@@ -412,6 +458,11 @@ nav ul{
 
 .pre-btn,
 .nxt-btn{
+  color: var(--iconos);
   border: none;
-  background-color: #F0F4F3;
+  background-color: var(--fondo);
+}
+
+.ir-inicio{
+  color: var(--letras);
 }

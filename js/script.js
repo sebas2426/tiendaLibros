@@ -4,6 +4,13 @@ const hamMenuOff= document.querySelector('.ham-menu-off');
 
 const irTopBtn= document.querySelector('.ir-inicio');
 
+const btnModoOscuro= document.getElementById('btn-modo-oscuro');
+
+const elementos= document.getElementById('modo');
+
+
+
+
 window.onscroll=()=>{
     scrollFunction();
 }
@@ -45,4 +52,9 @@ productContainers.forEach((item, i) => {
     preBtn[i].addEventListener('click', () => {
         item.scrollLeft -= containerWidth;
     });
+});
+
+
+btnModoOscuro.addEventListener('click', ()=>{
+    document.body.classList.toggle('modo-oscuro');
 });

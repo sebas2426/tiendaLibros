@@ -8,6 +8,7 @@
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"/>
     <script src="./js/script.js" defer></script>
+    <script src="./js/modoOscuro.js" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -17,7 +18,7 @@
         </div>
 
         <div class="ham-menu-off">
-            <!--<a href=""><li>Modo Nocturno</li></a>-->
+            <button id="btn-modo-oscuro">Modo Nocturno</button>
             <a href="./pages/catalogo.html"><li>Catálogo</li></a>
             <a href="./pages/servicios.html"><li>Nuestros servicios</li></a>
             <a href="./pages/sugerencias.html"><li>Envianos tu sugerencias</li></a>
@@ -59,61 +60,75 @@
         <h3 class="titulos-catalogos">Los más vendidos</h3>
         <div class="contenedorLista">
                 <button class="pre-btn"><i class="bi bi-arrow-left-square" style="font-size: 2rem;"></i></button>
-
-                
-                <div class="masVendidos">
+            <div class="masVendidos">
                
                 <div class="libros">
                     <img src="../images/50202953.jpg" alt="">
-                    <p>Titulo</p>
-                    <p>Autor</p>
-                    <p>Precio</p>
+                    <div class="info-libros">
+                        <p>Piranesi</p>
+                        <p>Susanna Clarke</p>
+                        <p>$$$</p>
+                    </div>
                 </div>
                 <div class="libros">
                     <img src="../images/autores/ciudad-bestias.jpg" alt="">
-                    <p>Titulo</p>
-                    <p>Autor</p>
-                    <p>Precio</p>
+                    <div class="info-libros">
+                        <p>La Ciudad de las Bestias</p>
+                        <p>Isabel Allende</p>
+                        <p>$$$</p>
+                    </div>
                 </div>
                 <div class="libros">
                     <img src="../images/autores/nosotros-luna.jpg" alt="">
-                    <p>Titulo</p>
-                    <p>Autor</p>
-                    <p>Precio</p>
+                    <div class="info-libros">
+                        <p>Nosotros en la Luna</p>
+                        <p>Alice Kellen</p>
+                        <p>$$$</p>
+                    </div>
                 </div>
                 <div class="libros">
                     <img src="../images/autores/chico-constelaciones.jpeg" alt="">
-                    <p>Titulo</p>
-                    <p>Autor</p>
-                    <p>Precio</p>
+                    <div class="info-libros">
+                        <p>El chico que dibujaba constelaciones</p>
+                        <p>Alice Kellen</p>
+                        <p>$$$</p>
+                    </div>
                 </div>
 
                 <div class="libros">
                     <img src="../images/autores/cien-anios-soledad.jpg" alt="">
-                    <p>Titulo</p>
-                    <p>Autor</p>
-                    <p>Precio</p>
+                    <div class="info-libros">
+                       <p>Cien años de soledad</p>
+                       <p>Gabriel García Márquez</p>
+                       <p>$$$</p>
+                   </div>
                 </div>
 
                 <div class="libros">
                     <img src="../images/autores/carrie.png" alt="">
-                    <p>Titulo</p>
-                    <p>Autor</p>
-                    <p>Precio</p>
+                    <div class="info-libros">
+                        <p>Carrie</p>
+                        <p>Stephen King</p>
+                        <p>$$$</p>
+                    </div>
                 </div>
 
                 <div class="libros">
                     <img src="../images/autores/el-viento-conoce-mi-nombre.jpg" alt="">
-                    <p>Titulo</p>
-                    <p>Autor</p>
-                    <p>Precio</p>
+                    <div class="info-libros">
+                        <p>El viento conoce mi nombre</p>
+                        <p>Isabel Allende</p>
+                        <p>$$$</p>
+                    </div>
                 </div>
 
                 <div class="libros">
                     <img src="../images/autores/juego-tronos.jpg" alt="">
-                    <p>Titulo</p>
-                    <p>Autor</p>
-                    <p>Precio</p>
+                    <div class="info-libros">
+                        <p>Juego de Tronos</p>
+                        <p>George R.R. Martin</p>
+                        <p>$$$</p>
+                    </div>
                 </div>
             </div>
             <button class="nxt-btn"><i class="bi bi-arrow-right-square" style="font-size: 2rem;"></i></button>
@@ -122,65 +137,80 @@
             <h3 class="titulos-catalogos">Destacados</h3>
             <div class="contenedorLista">
                 <button class="pre-btn"><i class="bi bi-arrow-left-square" style="font-size: 2rem;"></i></button>
-
-                
-                <div class="masVendidos">
+            <div class="masVendidos">
                
                 <div class="libros">
                     <img src="../images/50202953.jpg" alt="">
-                    <p>Titulo</p>
-                    <p>Autor</p>
-                    <p>Precio</p>
+                    <div class="info-libros">
+                        <p>Piranesi</p>
+                        <p>Susanna Clarke</p>
+                        <p>$$$</p>
+                    </div>
                 </div>
                 <div class="libros">
                     <img src="../images/autores/ciudad-bestias.jpg" alt="">
-                    <p>Titulo</p>
-                    <p>Autor</p>
-                    <p>Precio</p>
+                    <div class="info-libros">
+                        <p>La Ciudad de las Bestias</p>
+                        <p>Isabel Allende</p>
+                        <p>$$$</p>
+                    </div>
                 </div>
                 <div class="libros">
                     <img src="../images/autores/nosotros-luna.jpg" alt="">
-                    <p>Titulo</p>
-                    <p>Autor</p>
-                    <p>Precio</p>
+                    <div class="info-libros">
+                        <p>Nosotros en la Luna</p>
+                        <p>Alice Kellen</p>
+                        <p>$$$</p>
+                    </div>
                 </div>
                 <div class="libros">
                     <img src="../images/autores/chico-constelaciones.jpeg" alt="">
-                    <p>Titulo</p>
-                    <p>Autor</p>
-                    <p>Precio</p>
+                    <div class="info-libros">
+                        <p>El chico que dibujaba constelaciones</p>
+                        <p>Alice Kellen</p>
+                        <p>$$$</p>
+                    </div>
                 </div>
 
                 <div class="libros">
                     <img src="../images/autores/cien-anios-soledad.jpg" alt="">
-                    <p>Titulo</p>
-                    <p>Autor</p>
-                    <p>Precio</p>
+                    <div class="info-libros">
+                       <p>Cien años de soledad</p>
+                       <p>Gabriel García Márquez</p>
+                       <p>$$$</p>
+                   </div>
                 </div>
 
                 <div class="libros">
                     <img src="../images/autores/carrie.png" alt="">
-                    <p>Titulo</p>
-                    <p>Autor</p>
-                    <p>Precio</p>
+                    <div class="info-libros">
+                        <p>Carrie</p>
+                        <p>Stephen King</p>
+                        <p>$$$</p>
+                    </div>
                 </div>
 
                 <div class="libros">
                     <img src="../images/autores/el-viento-conoce-mi-nombre.jpg" alt="">
-                    <p>Titulo</p>
-                    <p>Autor</p>
-                    <p>Precio</p>
+                    <div class="info-libros">
+                        <p>El viento conoce mi nombre</p>
+                        <p>Isabel Allende</p>
+                        <p>$$$</p>
+                    </div>
                 </div>
 
                 <div class="libros">
                     <img src="../images/autores/juego-tronos.jpg" alt="">
-                    <p>Titulo</p>
-                    <p>Autor</p>
-                    <p>Precio</p>
+                    <div class="info-libros">
+                        <p>Juego de Tronos</p>
+                        <p>George R.R. Martin</p>
+                        <p>$$$</p>
+                    </div>
                 </div>
             </div>
             <button class="nxt-btn"><i class="bi bi-arrow-right-square" style="font-size: 2rem;"></i></button>
         </div>
+
 
         <div class="contenedorBanner">
             <div class="bannerDerecha">
@@ -195,128 +225,158 @@
         <h3 class="titulos-catalogos">Los más vendidos</h3>
         <div class="contenedorLista">
                 <button class="pre-btn"><i class="bi bi-arrow-left-square" style="font-size: 2rem;"></i></button>
-
-                
-                <div class="masVendidos">
+            <div class="masVendidos">
                
                 <div class="libros">
                     <img src="../images/50202953.jpg" alt="">
-                    <p>Titulo</p>
-                    <p>Autor</p>
-                    <p>Precio</p>
+                    <div class="info-libros">
+                        <p>Piranesi</p>
+                        <p>Susanna Clarke</p>
+                        <p>$$$</p>
+                    </div>
                 </div>
                 <div class="libros">
                     <img src="../images/autores/ciudad-bestias.jpg" alt="">
-                    <p>Titulo</p>
-                    <p>Autor</p>
-                    <p>Precio</p>
+                    <div class="info-libros">
+                        <p>La Ciudad de las Bestias</p>
+                        <p>Isabel Allende</p>
+                        <p>$$$</p>
+                    </div>
                 </div>
                 <div class="libros">
                     <img src="../images/autores/nosotros-luna.jpg" alt="">
-                    <p>Titulo</p>
-                    <p>Autor</p>
-                    <p>Precio</p>
+                    <div class="info-libros">
+                        <p>Nosotros en la Luna</p>
+                        <p>Alice Kellen</p>
+                        <p>$$$</p>
+                    </div>
                 </div>
                 <div class="libros">
                     <img src="../images/autores/chico-constelaciones.jpeg" alt="">
-                    <p>Titulo</p>
-                    <p>Autor</p>
-                    <p>Precio</p>
+                    <div class="info-libros">
+                        <p>El chico que dibujaba constelaciones</p>
+                        <p>Alice Kellen</p>
+                        <p>$$$</p>
+                    </div>
                 </div>
 
                 <div class="libros">
                     <img src="../images/autores/cien-anios-soledad.jpg" alt="">
-                    <p>Titulo</p>
-                    <p>Autor</p>
-                    <p>Precio</p>
+                    <div class="info-libros">
+                       <p>Cien años de soledad</p>
+                       <p>Gabriel García Márquez</p>
+                       <p>$$$</p>
+                   </div>
                 </div>
 
                 <div class="libros">
                     <img src="../images/autores/carrie.png" alt="">
-                    <p>Titulo</p>
-                    <p>Autor</p>
-                    <p>Precio</p>
+                    <div class="info-libros">
+                        <p>Carrie</p>
+                        <p>Stephen King</p>
+                        <p>$$$</p>
+                    </div>
                 </div>
 
                 <div class="libros">
                     <img src="../images/autores/el-viento-conoce-mi-nombre.jpg" alt="">
-                    <p>Titulo</p>
-                    <p>Autor</p>
-                    <p>Precio</p>
+                    <div class="info-libros">
+                        <p>El viento conoce mi nombre</p>
+                        <p>Isabel Allende</p>
+                        <p>$$$</p>
+                    </div>
                 </div>
 
                 <div class="libros">
                     <img src="../images/autores/juego-tronos.jpg" alt="">
-                    <p>Titulo</p>
-                    <p>Autor</p>
-                    <p>Precio</p>
+                    <div class="info-libros">
+                        <p>Juego de Tronos</p>
+                        <p>George R.R. Martin</p>
+                        <p>$$$</p>
+                    </div>
                 </div>
             </div>
             <button class="nxt-btn"><i class="bi bi-arrow-right-square" style="font-size: 2rem;"></i></button>
         </div>
+
 
             <h3 class="titulos-catalogos">Los más vendidos</h3>
             <div class="contenedorLista">
                 <button class="pre-btn"><i class="bi bi-arrow-left-square" style="font-size: 2rem;"></i></button>
-
-                
-                <div class="masVendidos">
+            <div class="masVendidos">
                
                 <div class="libros">
                     <img src="../images/50202953.jpg" alt="">
-                    <p>Titulo</p>
-                    <p>Autor</p>
-                    <p>Precio</p>
+                    <div class="info-libros">
+                        <p>Piranesi</p>
+                        <p>Susanna Clarke</p>
+                        <p>$$$</p>
+                    </div>
                 </div>
                 <div class="libros">
                     <img src="../images/autores/ciudad-bestias.jpg" alt="">
-                    <p>Titulo</p>
-                    <p>Autor</p>
-                    <p>Precio</p>
+                    <div class="info-libros">
+                        <p>La Ciudad de las Bestias</p>
+                        <p>Isabel Allende</p>
+                        <p>$$$</p>
+                    </div>
                 </div>
                 <div class="libros">
                     <img src="../images/autores/nosotros-luna.jpg" alt="">
-                    <p>Titulo</p>
-                    <p>Autor</p>
-                    <p>Precio</p>
+                    <div class="info-libros">
+                        <p>Nosotros en la Luna</p>
+                        <p>Alice Kellen</p>
+                        <p>$$$</p>
+                    </div>
                 </div>
                 <div class="libros">
                     <img src="../images/autores/chico-constelaciones.jpeg" alt="">
-                    <p>Titulo</p>
-                    <p>Autor</p>
-                    <p>Precio</p>
+                    <div class="info-libros">
+                        <p>El chico que dibujaba constelaciones</p>
+                        <p>Alice Kellen</p>
+                        <p>$$$</p>
+                    </div>
                 </div>
 
                 <div class="libros">
                     <img src="../images/autores/cien-anios-soledad.jpg" alt="">
-                    <p>Titulo</p>
-                    <p>Autor</p>
-                    <p>Precio</p>
+                    <div class="info-libros">
+                       <p>Cien años de soledad</p>
+                       <p>Gabriel García Márquez</p>
+                       <p>$$$</p>
+                   </div>
                 </div>
 
                 <div class="libros">
                     <img src="../images/autores/carrie.png" alt="">
-                    <p>Titulo</p>
-                    <p>Autor</p>
-                    <p>Precio</p>
+                    <div class="info-libros">
+                        <p>Carrie</p>
+                        <p>Stephen King</p>
+                        <p>$$$</p>
+                    </div>
                 </div>
 
                 <div class="libros">
                     <img src="../images/autores/el-viento-conoce-mi-nombre.jpg" alt="">
-                    <p>Titulo</p>
-                    <p>Autor</p>
-                    <p>Precio</p>
+                    <div class="info-libros">
+                        <p>El viento conoce mi nombre</p>
+                        <p>Isabel Allende</p>
+                        <p>$$$</p>
+                    </div>
                 </div>
 
                 <div class="libros">
                     <img src="../images/autores/juego-tronos.jpg" alt="">
-                    <p>Titulo</p>
-                    <p>Autor</p>
-                    <p>Precio</p>
+                    <div class="info-libros">
+                        <p>Juego de Tronos</p>
+                        <p>George R.R. Martin</p>
+                        <p>$$$</p>
+                    </div>
                 </div>
             </div>
             <button class="nxt-btn"><i class="bi bi-arrow-right-square" style="font-size: 2rem;"></i></button>
         </div>
+
             <h3 class="tituloCentrado">Autores destacados</h3>
             <div class="contenedorAutores">
                 <a href="./pages/autores/autor1.html"><span><img src="./images/autor1.jpg" alt="Stephen King">Stephen King</span></a>
