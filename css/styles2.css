@@ -103,8 +103,8 @@ form button{
 }
 .biografia.primero{
     display: flex;
-    background-color: #FFFFFF;
-    border: 1px solid #A8DCD1;
+    background-color: var(--banner);
+    border: 1px solid var(--borde);
     border-radius: 0.3rem;
     justify-content: center;
     text-align: center;
@@ -147,8 +147,8 @@ form button{
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    background-color: #FFFFFF;
-    border: 1px solid #A8DCD1;
+    background-color: var(--banner);
+    border: 1px solid var(--borde);
     height: 300px;
 }
 .biografia h2{
@@ -159,6 +159,7 @@ form button{
 .biografia.cuarto ul li{
   margin: 0.8rem;
   list-style: inside;
+  color: var(--letras);
 }
 
 

@@ -87,6 +87,7 @@
   --footer:#00695C;
   --letras:#333333;
   --iconos:black;
+
 }
 
 .modo-oscuro{
@@ -100,6 +101,11 @@
   --footer:#00695C;
   --letras:white;
   --iconos:white;
+}
+
+#icono-modo-oscuro{
+  transform: translate(-50%, -50%);
+  cursor: pointer;
 }
 
 
@@ -190,7 +196,6 @@ header{
     width: 90%;
 }
 
-
 main{
     display: flex;
     flex-direction: column;
@@ -198,9 +203,6 @@ main{
     padding-top: 1rem;
     background-color: var(--fondo);
 }
-
-
-
 .titulos-catalogos{
   align-self: self-start;
   padding-left: 6rem;
