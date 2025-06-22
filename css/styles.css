@@ -91,21 +91,25 @@
 }
 
 .modo-oscuro{
-  --fondo:rgb(26, 25, 25);
-  --header:black;
-  --ham-menu:rgb(68, 67, 67);
-  --ham-menu-btn:rgb(197, 187, 187);
-  --contenedorRecomendados:#333333;
-  --banner:#000000;
-  --borde:#A8DCD1;
-  --footer:#00695C;
-  --letras:white;
-  --iconos:white;
+  --fondo:    #121A1A; 
+  --header:   #1E2A2A;   
+  --ham-menu: #1E2A2A;   
+  --contenedorRecomendados: #262F2F; 
+
+  --banner:   #1E2A2A;   
+  --borde:    #2C3E3E;   
+  --footer:   #004D40;   
+
+  --letras:   #ECEFF1;  
+  --iconos:   #ECEFF1;  
+  --ham-menu-btn: #ECEFF1;
 }
 
 #icono-modo-oscuro{
   transform: translate(-50%, -50%);
   cursor: pointer;
+  font-size: 2.1rem;
+  color: var(--letras);
 }
 
 
@@ -114,7 +118,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:1rem;
+    padding:0.5rem 1rem;
     background-color: var(--header);
 }
 
@@ -181,8 +185,13 @@ header{
 
 .ham-menu.active span:nth-child(3){
   top: 50%;
-  transform: translate(-50%, 50%) rotate(-45deg);
+  transform: translate(-50%, -50%) rotate(-45deg);
 }
+
+.ham-menu span {
+  transform-origin: center center;
+}
+
 
 
 .contenedorIntroduccion,
@@ -222,6 +231,7 @@ main{
   border-radius: 0.5rem;
   margin: 2rem 0;
   padding: 1rem 0;
+  flex-wrap: wrap;
 }
 .contenedorLista{
 position: relative;
@@ -259,6 +269,7 @@ width: 70%;
   gap: 0.5rem;
   overflow: hidden;
   overflow-x: hidden;
+  object-fit: cover;
 }
 
 .libros:hover{
@@ -278,6 +289,7 @@ width: 70%;
 }
 
 .libros img{
+  object-fit: cover;
   width: 200px;
   height: 850px;
   overflow: hidden;
@@ -286,13 +298,15 @@ width: 70%;
 .contenedorBanner{
   display: flex;
   justify-content: center;
-  padding: 1.5rem;
+  padding: 1rem;
   gap: 1rem;
   border: 2px solid var(--borde);
   border-radius: 0.3rem;
   width: 80%;
   background-color: var(--banner);
   margin-bottom: 2rem;
+  flex-wrap: wrap-reverse;
+  min-width: 100px;
 }
 .bannerDerecha{
   display: flex;
@@ -300,6 +314,15 @@ width: 70%;
   justify-content: flex-start;
   gap: 1rem;
   width: 60%;
+  min-width: 100px;
+  flex-shrink: 0;
+
+}
+
+.contenedorBanner img{
+  width:350px;
+  height:200px;
+  flex-shrink: 0;
 }
 
 .bannerDerecha button{
@@ -321,6 +344,7 @@ width: 70%;
   width: 80%;
   padding: 1rem;
   margin: 1rem;
+  flex-wrap: wrap;
 }
 .contenedorAutores span{
   display: flex;
@@ -328,6 +352,7 @@ width: 70%;
   justify-content: center;
   align-items: center;
   text-align: center;
+  flex-shrink:0;
 }
 
 .contenedorAutores span:hover{
@@ -340,6 +365,7 @@ width: 150px;
 height: 150px;
 border-radius: 50%;
 margin-bottom: 0.5rem;
+flex-shrink: 0;
 }
 
 .tituloCentrado{
@@ -386,7 +412,7 @@ footer{
 }
 
 .contenedor-footer img{
-  background-color: #F0F4F3;
+  background-color: rgb(231, 228, 228);
   opacity: 0.9;
 }
 
