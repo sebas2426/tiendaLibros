@@ -44,8 +44,8 @@
 
         <form id="form">
   <div class="field">
-    <label for="title">Titulo</label>
-    <input type="text" name="title" id="title">
+    <label for="title">*Titulo</label>
+    <input type="text" name="title" id="title" required>
   </div>
   <div class="field">
     <label for="name">Nombre</label>
@@ -53,16 +53,16 @@
   </div>
 
   <div class="field">
-    <label for="email">Email</label>
-    <input type="email" name="email" id="email">
+    <label for="email">*Email</label>
+    <input type="email" name="email" id="email" required>
   </div>
 
   <div class="field">
-    <label for="message">Mensaje</label>
-    <textarea name="message" id="message"></textarea>
+    <label for="message">*Mensaje</label>
+    <textarea name="message" id="message" required></textarea>
   </div>
 
-  <input type="submit" id="button" value="Send Email" >
+  <input type="submit" id="button" value="Enviar" >
 </form>
             <i class="bi bi-arrow-up-circle ir-inicio hidden"  style="font-size: 2.5rem;"></i>
             
@@ -141,7 +141,7 @@ document.getElementById('form')
  .addEventListener('submit', function(event) {
    event.preventDefault();
 
-   btn.value = 'Sending...';
+   btn.value = 'Enviando...';
 
    const serviceID = 'default_service';
    const templateID = 'template_ni8tqtz';
@@ -149,7 +149,7 @@ document.getElementById('form')
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
       btn.value = 'Send Email';
-      alert('Sent!');
+      alert('Enviado!');
     }, (err) => {
       btn.value = 'Send Email';
       alert(JSON.stringify(err));

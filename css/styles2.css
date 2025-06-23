@@ -16,6 +16,9 @@
     border-radius: 0.3rem;
     align-self: flex-start;
     margin: 8rem 2rem;
+    flex-shrink: 0;
+    overflow: hidden;
+    min-width: 100px;
 }
 
 .servicio-izquierda{
@@ -30,8 +33,17 @@
 
 .servicio-derecha{
   width: 50%;
+  height: auto;
   align-self: center;
 }
+
+.servicio-derecha img{
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;
+}
+
+
 
 .servicio-izquierda button{
   border: none;
@@ -73,6 +85,7 @@ margin: 0;
     width: 100%;
     margin: 0;
     background-color: var(--contenedorRecomendados);
+    flex-wrap: nowrap;
 }
 form[id='sugerencias']{
     display: flex;
@@ -110,6 +123,7 @@ form button{
     text-align: center;
     gap: 1rem;
     padding: 1.5rem;
+    flex-wrap: wrap;
 }
 
 .biografia-derecha{
@@ -117,7 +131,7 @@ form button{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-   
+    width: 60%;
 }
 
 
@@ -126,6 +140,7 @@ form button{
     display: flex;
     width: 80%;
     gap: 1.5rem;
+    flex-wrap: wrap;
 }
 
 .biografia.primero img{
@@ -150,6 +165,8 @@ form button{
     background-color: var(--banner);
     border: 1px solid var(--borde);
     height: 300px;
+    width: 45%;
+    overflow: auto;
 }
 .biografia h2{
   text-align: center;

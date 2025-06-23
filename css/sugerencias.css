@@ -30,8 +30,10 @@ border: 1px solid rgb(206, 200, 200);
   font-size: 14px;
   background-color: var(--banner);
   color: var(--letras);
-  font-size: 1.02em;
+  font-size: 1.01em;
+  padding: 0.4rem 0.6rem;
   border: 1px solid rgb(105, 105, 105);
+  border-radius: 0.2rem;
 }
 
 .field textarea{
@@ -40,11 +42,26 @@ border: 1px solid rgb(206, 200, 200);
 
 input[type="submit"] {
   display: block;
-  padding: 6px 30px;
+  padding: 0.8rem 2rem;
   margin: 0 auto;
-  font-size: 14px;
+  font-size: 1.01em;
   background-color: #00897B;
   color: #fff;
   border: none;
   cursor:pointer;
+  border-radius: 0.2rem;
+}
+
+input[type='text']:valid,
+input[type='email']:valid,
+.field textarea:valid{
+  border: 2px solid rgb(89, 255, 89);
+  outline: none;
+}
+
+input[type='text']:invalid,
+input[type='email']:invalid,
+.field textarea:invalid{
+  border: 2px solid rgb(248, 69, 69);
+  outline: none;
 }
